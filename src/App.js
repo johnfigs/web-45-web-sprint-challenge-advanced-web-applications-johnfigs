@@ -8,14 +8,12 @@ import BubblePage from "./components/BubblePage";
 import PrivateRoute from "./components/PrivateRoute";
 import axiosWithAuth from "./helpers/axiosWithAuth";
 
-function App(props) {
+function App() {
 
   const handleLogout = (e) => {
-    e.preventDefault();
     axiosWithAuth()
       .post('/logout')
         .then(res=>{
-          //console.log(res);
           localStorage.removeItem("token");
         })
         .catch(err => {

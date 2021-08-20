@@ -27,7 +27,6 @@ const Login = (props) => {
     e.preventDefault();
     axios.post('http://localhost:5000/api/login', state.credentials)
       .then(res => {
-        console.log(res.data.payload);
         localStorage.setItem("token", res.data.payload);
         props.history.push('/bubbles');
       })
