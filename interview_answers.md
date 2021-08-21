@@ -10,6 +10,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 3. Describe how web servers work.
 
+- A web server is a computer with web server software and a website's component files. It reads HTTP requests and serves the content on it's servers. 
 
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
 
